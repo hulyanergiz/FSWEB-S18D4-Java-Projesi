@@ -1,14 +1,15 @@
 package com.workintech.banking.service;
 
+import com.workintech.banking.dto.CustomerResponse;
 import com.workintech.banking.entity.Customer;
 
 import java.util.List;
 
 public interface CustomerService {
 
-    List<Customer> findAll();
+    List<CustomerResponse> findAll();
 
-    Customer save(Customer customer);
+    CustomerResponse save(Customer customer);
 
     Customer find(long id);
 
